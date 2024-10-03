@@ -1,0 +1,90 @@
+
+database : Database is a collection of data sets which is further divided into schemas. 
+
+Schema : Schema is collection of data or tables to organize and manage efficiently.
+
+Table(s) : Tables are the collection of data which contains rows and columns .
+
+Row(s) : It is a single record which has the complete information about the data.
+
+Column(s) : Columns are the attributes about the data ,for example: age, name, id.
+
+
+
+DDL(Data Definition Language) : DDL is helped for the creation of architecture of data, how it will look and manage.
+Database is handled by DDL.
+Commands of DDL:
+
+
+
+1. Create : Create is used for the creation of object(s) like database, schema or table.
+2. Alter : Alter is used to make any modification in existing database object(table, schema, view, temporary table, etc).
+3. Drop : Drop is used to delete the existing database object.
+4. Truncate : Truncate is used to drop the data without structure of object. It also  drops all the references with respect to that particular object.
+5.DML (Data Manipulation Language) :
+ 
+
+A) Insert : Insert is used for making a new entry into a table.
+ B) Update : Update is used for the modification of existing table.
+ C) Delete : Delete is used for erasing an entry from table.
+ D) Select (comes under both DDL and DML) : Select is used for fetching a record ,to apply filters and sort the results, Join multiple tables,
+
+
+and a lot of operations to retrieve the data which we want to target.
+Select query = "From (Table name) where 'Group By' Having Select 'order by' Limit".
+Syntax for the creation of Schema: Create database (Database Name). next = use (Database Name).
+	Create schema (Schema name).next use schema.
+
+
+Show (schema/database/table) Def: Show is used for listing down database objects.
+Describe :It helps to give in detail information about particular data object. 
+For creation of a table : Create table 'table name' (column name datatype);
+
+Delimiter: In sql semicolon ";" is by default Delimiter but we can change it to whatever we want to. Delimiter helps to understand which action needs to be performed on the basis of the command given to the database.
+
+Primary key : Primary key is used for the unique identification of data in a table. Example : Phone number.
+Foreign key : Foreign key is used for joining other table and foreign keys are the primary key of other tables.
+Constraints : Constraints are the rules which restricts the performing of a particular sets of actions.
+Temporary tables : Temporary tables are the tables used for storing the data and performing all sorts of operations in a single sql session. After the expiration of the session temporary table will be flushed out .
+Views : Views are no tables but we can perform table like operation in views. Views are used when we want to show limited information.
+
+create table Students (id int , Name varchar , Age int );
+DATA TYPES:-
+	1) Numeric Data: Int(Big int, small int, etc)
+			 Float(decimals)
+	2) Text Data: Varchar (300)
+		      Text
+	3) Date and time: datetime, date.
+
+
+Aggregate function: 1) max(column name) : max is used to get highest number of the said column and it is applicable over numeric data types.
+		    2) min(column name) : minimum is used for finding the lowest value .
+		    3) avg(column name) : avg is used to find the average values of the selected columns.
+		    4) sum(column name) : sum is used to find the summation of the selected columns.
+		    5) count()  :count is used for getting the number of records.(only count can be applied over text data too).
+
+Rank is a special method use for ordering / Ranking based on sum numeric column base on categorical data 
+
+type of ranking 
+1. RANK:- assing a unique rank with gaps in ranking when there is a tie .
+2. DENS_RANK:- it will give unique ranking without gaps even if it is a tie.
+3. ROW NUMBER :- it will assign unique values without any repetation without any gap.
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
